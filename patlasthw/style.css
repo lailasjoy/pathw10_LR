@@ -1,0 +1,89 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+
+
+
+:root {
+    --primary-color: yellow; 
+    --secondary-color: black; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    transition: color 0.3s ease;
+}
+
+.colorful {
+  
+  background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.colorful .content {
+    border-color: var(--secondary-color);
+}
+
+.inverted {
+  background-color:var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.inverted .content {
+    border-color: var(--primary-color);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+
+
+  /* adjust typography defaults */
+  body {
+    margin: 1rem;
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: var(--main-bg-color);
+  }
+  
+  /* images and videos max out at full width */
+  img,
+  video {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  /* YOUR CSS GOES AFTER THIS */
+
+  body {
+    background-color: var(--main-bg-color);
+    color: #000000;
+  }
+  a {
+    background-color: var(--main-bg-color);
+  }
+  h3 {
+    background-color: var(--main-bg-color);
+    color: #CCCCCC;
+    padding: 2rem;
+  }
+
+  #modeToggle {
+    margin-bottom: 2rem;
+  }
+  
+  .instructions {
+    border-top: 1px solid #000000;
+  }
+  .instructions ol {
+    font-weight: bold;
+  }
